@@ -1,0 +1,35 @@
+/* Global Settings */
+html {
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-image {
+  padding: 2rem 1.5rem;
+}
+
+.large-image img,
+.large-image video {
+  width: 60%;
+  /* object-fit: cover; */
+}
+
+/* Header Settings */
+
+/* Banner Settings */
+
+/* Information Section */
+
+/* Course Section */
+
+/* Thesis Section */
+
+/* Footer Section */
