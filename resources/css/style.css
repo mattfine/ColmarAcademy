@@ -3,6 +3,15 @@ html {
   font-size: 16px;
 }
 
+strong {
+  font-weight: bold;
+}
+
+.main {
+  position: relative;
+  top: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -10,6 +19,10 @@ html {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .large-image {
@@ -23,6 +36,51 @@ html {
 }
 
 /* Header Settings */
+header {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+
+header div.flex {
+  flex-grow: 1;
+}
+
+header .desktop img {
+  height: 2rem;
+  width: auto;
+  margin-left: 1.5rem;
+}
+
+nav.desktop {
+  margin-right: 1rem;
+}
+
+.desktop ul li {
+  padding: 0 0.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile .flex {
+    justify-content: space-around;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+}
 
 /* Banner Settings */
 
