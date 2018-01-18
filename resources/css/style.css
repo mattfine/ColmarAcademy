@@ -165,10 +165,41 @@ nav.desktop {
 }
 
 .information h6 {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 /* Course Section */
+.course {
+  background-color: lightgray;
+}
 
+.course h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.subjects {
+  padding: 0 3.5rem;
+  flex-wrap: wrap;
+}
+
+.subject {
+  max-width: 33.25rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.subject-info {
+  padding: 1rem;
+}
+
+.subject-info span {
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.subject-info p {
+  padding-bottom: 0.5rem;
+}
 /* Thesis Section */
 
 /* Footer Section */
