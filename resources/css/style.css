@@ -7,9 +7,26 @@ strong {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+
 .main {
   position: relative;
   top: 4rem;
+  width: 100%;
 }
 
 .flex {
@@ -25,14 +42,45 @@ strong {
   align-items: center;
 }
 
+.large-info {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
 .large-image {
-  padding: 2rem 1.5rem;
+  /* margin: 2rem 1.5rem; */
 }
 
 .large-image img,
 .large-image video {
-  width: 60%;
-  /* object-fit: cover; */
+  width: 100%;
+}
+
+.small-info {
+  width: 40%;
+}
+
+.small-block .flex-column,
+.banner .flex-column {
+  justify-content: center;
+}
+
+.small-block .flex-column {
+  width: 65%;
+}
+
+.small-image {
+  width: 35%;
+  margin: 1rem;
+}
+
+.small-image img {
+  width: 100%;
+  height: auto;
+}
+
+.small-block p {
+  margin: 0.5rem 0;
 }
 
 /* Header Settings */
@@ -83,9 +131,42 @@ nav.desktop {
 }
 
 /* Banner Settings */
+.banner {
+  background-color: lightgray;
+}
+
+.banner h1, h4 {
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.banner h5 {
+  background-color: dimgray;
+  padding: 0.5rem 0;
+  text-align: center;
+  max-width: 80%;
+}
 
 /* Information Section */
+.information .small-info {
+  border-left: 1px solid lightgray;
+}
 
+.information .small-block {
+  border-bottom: 1px solid lightgray;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.information h2 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.information h6 {
+  padding: 2rem 0;
+}
 /* Course Section */
 
 /* Thesis Section */
