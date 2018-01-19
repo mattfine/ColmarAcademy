@@ -14,7 +14,7 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h4 {
   font-size: 1.5rem;
@@ -178,14 +178,24 @@ nav.desktop {
 }
 
 .subjects {
-  padding: 0 3.5rem;
+  padding: 0 3.5rem 1rem 3.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1168px;
+  margin: 0 auto;
 }
 
 .subject {
-  max-width: 33.25rem;
+  /* max-width: 33.25rem; actual size*/
+  /* max-width: 17rem; size to fit 1024*/
+  max-width: 20rem;
   margin: 1rem;
   background-color: white;
+}
+
+.subject img {
+  max-width: 100%;
+  height: auto;
 }
 
 .subject-info {
