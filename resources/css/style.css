@@ -211,5 +211,21 @@ nav.desktop {
   padding-bottom: 0.5rem;
 }
 /* Thesis Section */
+.thesis {
+  border-bottom: 1px solid lightgray;
+}
 
+.thesis h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
 /* Footer Section */
+footer {
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+footer li {
+  padding: 0 0.5rem;
+}
