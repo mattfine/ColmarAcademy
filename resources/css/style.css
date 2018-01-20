@@ -4,19 +4,19 @@ html {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 h4 {
   font-size: 1.5rem;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h6 {
@@ -140,8 +140,8 @@ nav.desktop {
   background-color: lightgray;
 }
 
-.banner h1, h4 {
-  padding-right: 3rem;
+.banner h1, .banner h4 {
+  padding-right: 2rem;
   padding-bottom: 1.5rem;
 }
 
@@ -150,6 +150,34 @@ nav.desktop {
   padding: 0.5rem 0;
   text-align: center;
   max-width: 80%;
+}
+
+@media only screen and (max-width: 872px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .large-info {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .banner .small-info {
+    width: auto;
+    padding-top: 0;
+    margin: 0 1rem;
+  }
+
+  .banner h1 {
+    padding-bottom: 2rem;
+  }
+
+  .banner h5 {
+    align-self: center;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Information Section */
@@ -172,6 +200,48 @@ nav.desktop {
 .information h6 {
   padding-top: 2rem;
 }
+
+@media only screen and (max-width: 872px) {
+  .information .large-info {
+    display: none;
+  }
+
+  .information .small-image {
+    display: none;
+  }
+
+  .information .small-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .information .small-block {
+    border-bottom: none;
+    margin: 0 auto;
+  }
+
+  .small-block .flex-column {
+    width: auto;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .information img {
+    max-width: 576px;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    flex-shrink: 1;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .information h3, .information p, .information span {
+    padding-left: 1rem;
+  }
+}
+
 /* Course Section */
 .course {
   background-color: lightgray;
@@ -215,6 +285,42 @@ nav.desktop {
 .subject-info p {
   padding-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .course {
+    background-color: white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .course h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .subject img, .subject span, .subject p {
+    display: none;
+  }
+
+  .subjects {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    /* flex-wrap: nowrap; */
+  }
+
+  .subject {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .subject-info {
+    margin: 0.5rem 1rem;
+    background-color: lightgray;
+  }
+}
+
 /* Thesis Section */
 .thesis {
   border-bottom: 1px solid lightgray;
@@ -224,6 +330,23 @@ nav.desktop {
   padding-top: 2rem;
   text-align: center;
 }
+
+@media only screen and (max-width: 872px) {
+  .thesis .small-info {
+    display: none;
+  }
+
+  .thesis .large-info {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .thesis h3, .thesis p {
+    display: none;
+  }
+
+}
+
 /* Footer Section */
 footer {
   padding: 1rem 1.5rem;
@@ -233,4 +356,14 @@ footer {
 
 footer li {
   padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  footer li {
+    display: none;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
 }
