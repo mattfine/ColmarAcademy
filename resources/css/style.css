@@ -1,20 +1,25 @@
 /* Global Settings */
 html {
   font-size: 16px;
+  font-family: Tahoma, sans-serif;
 }
 
 h1 {
   font-size: 2.75rem;
 }
+
 h2 {
   font-size: 2.25rem;
 }
+
 h3 {
   font-size: 1.75rem;
 }
+
 h4 {
   font-size: 1.5rem;
 }
+
 h5 {
   font-size: 1.25rem;
 }
@@ -25,6 +30,10 @@ h6 {
 
 ul {
   list-style: none;
+}
+
+p {
+  font-family: Lora, serif;
 }
 
 .main {
@@ -49,10 +58,6 @@ ul {
 .large-info {
   width: 60%;
   margin: 2rem 1.5rem;
-}
-
-.large-image {
-  /* margin: 2rem 1.5rem; */
 }
 
 .large-image img,
@@ -107,6 +112,10 @@ header .desktop img {
   margin-left: 1.5rem;
 }
 
+header span {
+  font-size: 1.25rem;
+}
+
 nav.desktop {
   margin-right: 1rem;
 }
@@ -119,7 +128,7 @@ nav.desktop {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   .mobile {
     display: block;
     width: 100%;
@@ -132,7 +141,6 @@ nav.desktop {
   .desktop {
     display: none;
   }
-
 }
 
 /* Banner Settings */
@@ -145,11 +153,20 @@ nav.desktop {
   padding-bottom: 1.5rem;
 }
 
+.banner h4 {
+  font-family: Lora, serif;
+}
+
 .banner h5 {
   background-color: dimgray;
+  color: white;
   padding: 0.5rem 0;
   text-align: center;
   max-width: 80%;
+}
+
+.banner h5:hover {
+  background-color: gray;
 }
 
 @media only screen and (max-width: 872px) {
@@ -199,6 +216,11 @@ nav.desktop {
 
 .information h6 {
   padding-top: 2rem;
+}
+
+.information span {
+  font-family: Lora, serif;
+  color: blue;
 }
 
 @media only screen and (max-width: 872px) {
@@ -261,8 +283,6 @@ nav.desktop {
 }
 
 .subject {
-  /* max-width: 33.25rem; actual size*/
-  /* max-width: 17rem; size to fit 1024*/
   max-width: 20rem;
   margin: 1rem;
   background-color: white;
@@ -306,7 +326,6 @@ nav.desktop {
     padding: 0;
     flex-direction: column;
     margin-bottom: 1.5rem;
-    /* flex-wrap: nowrap; */
   }
 
   .subject {
@@ -331,6 +350,10 @@ nav.desktop {
   text-align: center;
 }
 
+.large-info h3 {
+  padding: 1.5rem 0 0.5rem;
+}
+
 @media only screen and (max-width: 872px) {
   .thesis .small-info {
     display: none;
@@ -351,6 +374,10 @@ footer {
   padding: 1rem 1.5rem;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+footer h6 {
+  font-weight: normal;
 }
 
 footer li {
